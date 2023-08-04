@@ -6,6 +6,8 @@ public class Circle : IArea
 
     public Circle(double radius)
     {
+        if (radius < 0)
+            throw new ArgumentOutOfRangeException(nameof(radius));
         _radius = radius;
     }
 
