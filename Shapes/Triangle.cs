@@ -13,6 +13,12 @@ public class Triangle : IArea
 		{
 			throw new ArgumentOutOfRangeException();
 		}
+
+		if (aSide + bSide + cSide - Math.Max(aSide, Math.Max(bSide, cSide))
+			<= Math.Max(aSide, Math.Max(bSide, cSide)))
+		{
+			throw new ArgumentException();
+		}
 		_aSide = aSide;
 		_bSide = bSide;
 		_cSide = cSide;
