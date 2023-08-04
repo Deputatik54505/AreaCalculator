@@ -1,7 +1,7 @@
-﻿namespace AreaCalculator;
+﻿namespace AreaCalculator.Shapes;
 
 
 public interface IArea
 {
-	double Area();
+    double Area();
 }
